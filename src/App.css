@@ -1,81 +1,101 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: 
-        "image sidebar"
-        "slider sidebar";
-    height: 100vh;
-    width: 100vw;
-    background-color: #DADADA ;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "image sidebar"
+    "slider sidebar";
+  height: 100vh;
+  width: 100vw;
+  background-color: #dadada;
 }
 
 .main-image {
-    grid-area: image;
-    background-image: url("https://source.unsplash.com/EwKXn5CapA4");
-    width: 100%;
-    height: 100%;
-    background-position: top center;
-    background-size: contain;
-    background-repeat: no-repeat; 
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.upload-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-image > h1 {
+  color: purple;
+  font-size: 70px;
 }
 
 .sidebar {
-    grid-area: sidebar;
-    background-color: hsl(265, 100%, 86%);
-    border-left: 1px solid hsl(265, 100%, 56%);
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; 
+  grid-area: sidebar;
+  background-color: hsl(265, 100%, 86%);
+  border-left: 1px solid hsl(265, 100%, 56%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .sidebar-item {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: hsl(265, 100%, 66%);
-    padding: 1rem;
-    position: relative;
-    transition: background-color 150ms;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: hsl(265, 100%, 86%);
+  padding: 1.5rem 3rem;
+  position: relative;
+  transition: background-color 150ms;
+  font-size: 20px;
+}
+
+.sidebar-item:hover {
+  background-color: hsl(265, 100%, 76%);
 }
 
 .sidebar-item.active {
-    background-color: hsl(265, 100%, 76%);
+  background-color: hsl(265, 100%, 70%);
 }
 
 .sidebar-item::after {
-    content: '';
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    bottom: 0;
-    height: 1px;
-    background-color: hsl(265, 100%, 26%);
+  content: " ";
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  height: 2px;
+  background-color: hsl(265, 100%, 46%);
 }
 
 .sidebar-item:last-child::after {
-    display: none;
+  display: none;
 }
 
-.sidebar-item:hover, .sidebar-item:focus {
-    background-color: hsl(265, 100%, 66%);
+.download {
+  border: none;
+  outline: none;
+  background: black;
+  font-size: 20px;
+  color: white;
+  padding: 10px 0;
+  margin: 20px 0;
 }
 
 .slider-container {
-    grid-area: slider;
-    margin-top:2rem;
-    padding: 2rem;
+  grid-row: slider;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
 .slider {
-    width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
