@@ -13,7 +13,7 @@
     "slider sidebar";
   height: 100vh;
   width: 100vw;
-  background-color: #dadada;
+  background-color: ivory;
 }
 
 .main-image {
@@ -34,7 +34,7 @@
 
 .upload-image > h1 {
   color: purple;
-  font-size: 70px;
+  font-size: 20px;
 }
 
 .sidebar {
@@ -82,7 +82,7 @@
 .download {
   border: none;
   outline: none;
-  background: black;
+  background:hsl(265, 100%, 46%);
   font-size: 20px;
   color: white;
   padding: 10px 0;
@@ -91,7 +91,7 @@
 
 .slider-container {
   grid-row: slider;
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding: 2rem;
 }
 
