@@ -1,6 +1,6 @@
 # Photoshop Clone React
 
-![Photoshop Clone React]()
+![Photoshop Clone React](https://i.ibb.co/Sv5JcXk/photoshop-clone.png)
 
 ### [Live Site](https://photoshopclonereact.netlify.app/)
 
