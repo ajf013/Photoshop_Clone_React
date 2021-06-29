@@ -2,7 +2,7 @@
 
 ![Photoshop Clone React]()
 
-### [Live Site](https://imagecompressoroffline.netlify.app/)
+### [Live Site](https://photoshopclonereact.netlify.app/)
 
 
 

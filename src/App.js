@@ -4,6 +4,7 @@ import SidebarItem from "./components/SidebarItem";
 import Slider from "./components/Slider";
 import * as htmlToImage from "html-to-image";
 import * as download from "downloadjs";
+import Footer from './components/Footer/Footer' 
 
 const DEFAULT_OPTIONS = [
   {
@@ -149,6 +150,7 @@ const App = () => {
         value={selectedOption.value}
         handleChange={handleSliderChange}
       />
+      <Footer />
     </div>
   );
 };
